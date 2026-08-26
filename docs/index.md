@@ -1,15 +1,61 @@
-# Welcome! 
+---
+hide:
+  - navigation
+  - toc
+---
 
-```py
->> "Theoretical Physicist"
->> "Musician"
->> "Photo/Videographer"
->> "Barista"
-```
-## About Me
-![Profile Picture](photos/DSC05650.JPG){ width="250", align="left"}
-Hi Everyone! I'm Conrad - A *Theoretical Physics* BSc student at [Royal Holloway University of London](https://www.royalholloway.ac.uk/research-and-education/departments-and-schools/physics/). Currently, I'm on my _2nd year_ at RHUL and this webpage is made to serve as a profile page about myself and the work I do :)
+<div class="hero" markdown>
+<div class="hero__body" markdown>
 
-##Contact Details
-College Email: [ka.ho.2024@live.rhul.ac.uk](mailto:ka.ho.2024@live.rhul.ac.uk)
+# Conrad Ho
 
+<p class="hero-meta" markdown>
+’07 · they/them · 🇭🇰 🇬🇧 🏳️‍🌈  
+</p>
+
+<p class="hero-lede" markdown>
+Theoretical Physics · Orchestral Conductor 
+</p>
+
+</div>
+
+<div class="split" markdown>
+
+<div markdown>
+### Keywords
+<p class="hero-tags" markdown>
+Quantum foundations · Tests of quantum gravity · Collapse models · Orchestral conducting · Tutoring
+</p>
+</div>
+
+<div markdown>
+### Physics
+
+3rd year Theoretical Physics (BSc.) student, interested in Quantum Foundations.
+
+[Physics →](Physics/index.md)
+</div>
+
+<div markdown>
+### Conducting
+
+Current Positions: Principal Conductor (Royal Holloway String Society) · Assistant Conductor (Royal Holloway Wind Orchestra)
+
+[Conducting →](Conducting/index.md)
+</div>
+
+<div markdown>
+### Tutoring
+
+Tutoring for GCSE, A Level, and 1st year Physics undergraduates.
+
+[Tutoring →](tutoring.md)
+</div>
+
+</div>
+
+<div class="cta" markdown>
+**Get in touch** — for conducting engagements, tutoring, or a conversation.
+
+[Contact →](contact.md)
+</div>

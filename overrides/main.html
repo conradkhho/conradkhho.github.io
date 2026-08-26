@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{#
+  Rotating photo background.
+
+  Which pool a page uses:
+    Physics/*     -> extra.backgrounds.physics
+    Conducting/*  -> extra.backgrounds.conducting
+    tutoring/     -> none
+    everything else (home, contact, ...) -> extra.backgrounds.all
+
+  Edit the pools under `extra.backgrounds` in mkdocs.yml — nothing here changes.
+#}
+{% block content %}
+  {% set pools = config.extra.backgrounds %}
+  {% if page.url.startswith('tutoring') %}
+    {% set photos = [] %}
+  {% elif page.url.startswith('Physics') %}
+    {% set photos = pools.physics %}
+  {% elif page.url.startswith('Conducting') %}
+    {% set photos = pools.conducting %}
+  {% else %}
+    {% set photos = pools.all %}
+  {% endif %}
+
+  {% if photos %}
+    <div class="page-bg" aria-hidden="true" data-rotate="{{ config.extra.background_interval | default(6000) }}">
+      {% for photo in photos %}
+        <img src="{{ photo | url }}" alt="" loading="{{ 'eager' if loop.first else 'lazy' }}">
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  {{ super() }}
+{% endblock %}

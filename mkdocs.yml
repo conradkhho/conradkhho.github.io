@@ -1,38 +1,147 @@
-site_name: Conrad Ho Profile
+site_name: Conrad Ho
+site_description: Theoretical physicist and orchestral conductor — Royal Holloway, University of London.
+site_url: https://conradkhho.github.io/
+
 nav:
   - Home: index.md
   - Physics:
-      - About Me: Physics/physics.md
-      - Year 1:
-          - Summer Project:
-              - Physics/Year 1/Summer Project 2025/Summer Project 2025.md 
-                
-  - Music: Music/music.md
-  
+      - Overview: Physics/index.md
+      - Research:
+          - Projects: Physics/research/projects.md
+          - Presentations & conferences: Physics/research/presentations.md
+      - Gallery: Physics/gallery.md
+  - Conducting:
+      - Conducting/index.md
+      - Biography: Conducting/biography.md
+      - Repertoire: Conducting/repertoire.md
+      - Media: Conducting/media.md
+      - Concerts: Conducting/concerts/index.md
+      - Enquiries: Conducting/enquiries.md
+  - Tutoring: tutoring.md
+  - Contact: contact.md
+
+theme:
+  name: material
+  custom_dir: overrides
+  language: en
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    logo: material/home
+  favicon: photos/DSC05650.JPG
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.instant
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - content.code.copy
+    - content.code.select
+    - content.code.annotate
 
 markdown_extensions:
-  - mdx_math
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.details
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.inlinehilite
-  - pymdownx.snippets
+  - pymdownx.snippets:
+      base_path: [snippets]
   - pymdownx.superfences
-  - pymdownx.arithmatex:
-      generic: true
-  - attr_list
-  - md_in_html
   - pymdownx.blocks.caption
 
-theme:
-  name: material
-  features:
-    - content.code.copy
-    - content.code.select
-    - content.code.annotate
+plugins:
+  - search
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      draggable: false
+      skip_classes: [no-lightbox]
+
+extra_css:
+  - stylesheets/extra.css
 
 extra_javascript:
-  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_HTML
+  - javascripts/booking.js
+  - javascripts/rotator.js
   - javascripts/mathjax.js
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+extra:
+  # Photos cycled as the page background. Which pool a page uses is decided in
+  # overrides/main.html: Physics pages get `physics`, Conducting pages get
+  # `conducting`, Tutoring gets none, everything else gets `all`.
+  # Paths are relative to docs/. Add or remove lines freely.
+  background_interval: 6000
+  backgrounds:
+    all:
+      - Conducting/musicphotos/picture-gallery-concert.jpg
+      - Physics/media/quirk-lecture-theatre.jpg
+      - Conducting/musicphotos/rehearsal-conducting.jpg
+      - Physics/media/summer-project-2025.jpg
+      - Conducting/musicphotos/masterclass-2.jpg
+      - Physics/media/quirk-slide.jpg
+      - Conducting/musicphotos/concol-2025.jpg
+      - Physics/media/20250215_163746286.JPG
+    physics:
+      - Physics/media/quirk-lecture-theatre.jpg
+      - Physics/media/summer-project-2025.jpg
+      - Physics/media/quirk-slide.jpg
+      - Physics/media/20250215_132930350.JPG
+      - Physics/media/20250215_163746286.JPG
+      - Physics/media/campus.jpg
+    conducting:
+      - Conducting/musicphotos/picture-gallery-concert.jpg
+      - Conducting/musicphotos/rehearsal-conducting.jpg
+      - Conducting/musicphotos/masterclass-1.jpg
+      - Conducting/musicphotos/masterclass-2.jpg
+      - Conducting/musicphotos/concol-2025.jpg
+      - Conducting/musicphotos/colin-metters-masterclass.jpg
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/conradkhho
+      name: GitHub
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/playlist?list=PLC4E8-OVLFsc
+      name: Conducting portfolio
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/conrad-ho-11574530a/
+      name: LinkedIn
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/conradho._.music/
+      name: Instagram
+    - icon: material/email
+      link: mailto:conradkhho@gmail.com
+      name: Email

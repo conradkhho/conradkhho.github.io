@@ -1,0 +1,6 @@
+.DS_Store
+site/
+_unused-media/
+.venv/
+_originals/
+.claude/
