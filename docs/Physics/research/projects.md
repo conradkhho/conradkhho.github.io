@@ -1,3 +1,7 @@
+---
+description: Research projects by Conrad Ho, including SEPnet-funded summer research on entanglement measures in quantum gravity tests.
+---
+
 # Projects
 
 ## SEPnet Competitive Funded Summer Research Programme — [CQER-IQ](https://cqer-iq.com/)

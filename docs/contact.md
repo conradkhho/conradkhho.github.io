@@ -1,6 +1,7 @@
 ---
 hide:
   - toc
+description: Get in touch with Conrad Ho.
 ---
 
 # Contact

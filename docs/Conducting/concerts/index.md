@@ -1,6 +1,7 @@
 ---
 hide:
   - toc
+description: Upcoming and past concerts conducted by Conrad Ho.
 ---
 
 # Concerts

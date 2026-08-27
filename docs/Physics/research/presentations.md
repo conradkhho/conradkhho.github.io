@@ -1,3 +1,7 @@
+---
+description: Conference talks and presentations by Conrad Ho on Physics research, including QUIRK and quantum gravity conferences.
+---
+
 # Presentations & conferences
 
 - **QUIRK Conference for Undergraduate Research** — 2025.

@@ -1,3 +1,7 @@
+---
+description: Biography of Conrad Ho, orchestral conductor — training, engagements, and testimonials.
+---
+
 # Biography
 
 <ul class="rotator" data-rotate="7000" markdown>
@@ -8,7 +12,7 @@ music.
 </li>
 </ul>
 
-![Conductint at Windsor Auditorium, Royal Holloway](musicphotos/concol-2025.jpg){ .side .inset .no-lightbox }
+![Conducting at Windsor Auditorium, Royal Holloway](musicphotos/concol-2025.jpg){ .side .inset .no-lightbox }
 
 Conrad is an emerging orchestral conductor, with experience across symphonic, string, and wind ensemble repertoire. Their conducting style focuses on clarity and minimal distraction to the players, in order to encourage confidence and a diplomatic musical direction.
 

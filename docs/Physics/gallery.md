@@ -1,6 +1,7 @@
 ---
 hide:
   - toc
+description: Photo gallery from Conrad Ho's physics research, conferences, and academic work.
 ---
 
 # Gallery

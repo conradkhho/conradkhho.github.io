@@ -1,3 +1,7 @@
+---
+description: Private online tutoring in Maths and Physics (GCSE, A Level, first-year undergraduate) with Conrad Ho.
+---
+
 # Tutoring
 
 > Private online tutor for High School Mathematics and Physics since Jul 2025

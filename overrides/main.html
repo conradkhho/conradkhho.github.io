@@ -1,5 +1,19 @@
 {% extends "base.html" %}
 
+{% block extrahead %}
+  {% set description = (page.meta and page.meta.description) or config.site_description %}
+  {% set image = ((page.meta and page.meta.image) or "photos/DSC05650.JPG") | url %}
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ page.title | default(config.site_name) }}">
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:url" content="{{ page.canonical_url }}">
+  <meta property="og:image" content="{{ config.site_url }}{{ image }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page.title | default(config.site_name) }}">
+  <meta name="twitter:description" content="{{ description }}">
+  <meta name="twitter:image" content="{{ config.site_url }}{{ image }}">
+{% endblock %}
+
 {#
   Rotating photo background.
 

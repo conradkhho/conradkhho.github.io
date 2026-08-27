@@ -1,6 +1,7 @@
 ---
 hide:
   - toc
+description: Conrad Ho — orchestral conductor. Overview of conducting work, training, and testimonials.
 ---
 
 # Overview

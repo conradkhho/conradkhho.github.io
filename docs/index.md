@@ -2,6 +2,7 @@
 hide:
   - navigation
   - toc
+description: Conrad Ho — theoretical physicist and orchestral conductor at Royal Holloway, University of London.
 ---
 
 <div class="hero" markdown>

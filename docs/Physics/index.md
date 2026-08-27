@@ -1,3 +1,7 @@
+---
+description: Conrad Ho's physics research — Quantum Foundations, tests of quantum gravity, and collapse models at Royal Holloway.
+---
+
 # Physics
 
 ![Presenting at the 2025 QUIRK Conference, Imperial College London](media/quirk-lecture-theatre.jpg){ .inset .side }

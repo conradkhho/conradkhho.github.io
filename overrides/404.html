@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Page not found</h1>
+  <p>That page doesn't exist — it may have moved or the link's out of date.</p>
+  <ul>
+    <li><a href="{{ 'index.html' | url }}">Home</a></li>
+    <li><a href="{{ 'Physics/index.html' | url }}">Physics</a></li>
+    <li><a href="{{ 'Conducting/index.html' | url }}">Conducting</a></li>
+    <li><a href="{{ 'tutoring.html' | url }}">Tutoring</a></li>
+    <li><a href="{{ 'contact.html' | url }}">Contact</a></li>
+  </ul>
+{% endblock %}

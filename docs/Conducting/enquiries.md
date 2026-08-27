@@ -1,6 +1,7 @@
 ---
 hide:
   - toc
+description: Book Conrad Ho for assistant, guest, or principal conducting engagements.
 ---
 # Enquiries
 ![With Colin Metters, Girton Conducting Course](musicphotos/colin-metters-masterclass.jpg){ .inset .side}

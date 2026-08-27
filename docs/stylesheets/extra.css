@@ -167,7 +167,7 @@
    Measure and rhythm
    ========================================================================== */
 
-.md-grid { max-width: 70rem; }
+.md-grid { max-width: 60rem; }
 
 .md-typeset hr {
   border-bottom: 1px solid var(--rule);
@@ -950,10 +950,15 @@ html { scrollbar-color: var(--rule-strong) transparent; }
 /* Everything else on the page sits above the plate */
 .md-typeset > *:not(.page-bg) { position: relative; z-index: 1; }
 
-/* Sidebars and header sit above it too, on a light wash so nav stays crisp */
-.md-sidebar {
-  position: sticky;
-  z-index: 2;
+/* Sidebars and header sit above it too, on a light wash so nav stays crisp.
+   Only on desktop — below 76.25em Material's sidebars are an off-canvas
+   drawer that depends on `position: fixed`; overriding that unconditionally
+   broke the drawer and squeezed page content into a sliver on mobile. */
+@media screen and (min-width: 76.25em) {
+  .md-sidebar {
+    position: sticky;
+    z-index: 2;
+  }
 }
 
 /* Sidebars read as a soft veil over the photo rather than a hard panel:
@@ -1042,23 +1047,16 @@ html { scrollbar-color: var(--rule-strong) transparent; }
 
 .md-typeset .inset-figure__frame {
   position: relative;
-  aspect-ratio: 16 / 9;
   border-radius: 4px;
   overflow: hidden;
   background: var(--paper-sunk);
 }
 
-.md-typeset .inset-figure__frame img,
-.md-typeset .inset-figure__frame a {
+.md-typeset .inset-figure__blur {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
-}
-
-.md-typeset .inset-figure__frame a img { position: static; }
-
-.md-typeset .inset-figure__blur {
   object-fit: cover;
   transform: scale(1.25);
   filter: blur(30px) saturate(.7) brightness(1.05);
@@ -1068,7 +1066,14 @@ html { scrollbar-color: var(--rule-strong) transparent; }
   filter: blur(30px) saturate(.7) brightness(.55);
 }
 
+.md-typeset .inset-figure__frame a { display: block; }
+
 .md-typeset .inset-figure__frame img.inset {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 70vh;
   object-fit: contain;
   cursor: zoom-in;
 }
@@ -1088,8 +1093,6 @@ html { scrollbar-color: var(--rule-strong) transparent; }
     margin: .2rem 0 1.4rem 2.2rem;
     shape-outside: margin-box;
   }
-
-  .md-typeset .inset-figure--side .inset-figure__frame { aspect-ratio: 4 / 3; }
 }
 
 /* A floated figure must not overhang the next section or squeeze a grid */

@@ -1,6 +1,7 @@
 ---
 hide:
   - toc
+description: Recordings and video of Conrad Ho conducting.
 ---
 
 # Media
