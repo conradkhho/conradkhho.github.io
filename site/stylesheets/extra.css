@@ -1,0 +1,1110 @@
+
+:root,
+[data-md-color-scheme="default"] {
+  /*  primitives */
+  --warm-cream:   #f5f0e8;
+  --off-white:    #fafaf8;
+  --ivory:        #fffff0;
+  --blush:        #f5e6e6;
+  --pale-rose:    #e8d4d4;
+  --dusty-rose:   #d4a5a5;
+  --beige:        #e8dcc8;
+  --warm-taupe:   #c4b5a0;
+  --warm-grey:    #a89f94;
+  --light-grey:   #d4ccbf;
+  --almost-white: #f0ebe5;
+  --charcoal:     #3c3c3c;
+  --dark-grey:    #5c5252;
+  --medium-grey:  #8c8480;
+  --deep-rose:    #9a4949;
+  --deep-taupe:   #715f46;
+  --deep-sage:    #586745;
+  --sage:         #b8c5a0;
+
+  /* Roles */
+  --paper:       var(--warm-cream);
+  --paper-raise: var(--off-white);
+  --paper-sunk:  var(--almost-white);
+  --ink:         var(--charcoal);
+  --ink-muted:   var(--dark-grey);
+  --ink-faint:   var(--medium-grey);
+  --rule:        var(--light-grey);
+  --rule-strong: var(--warm-taupe);
+  --accent:      var(--deep-rose);
+  --accent-soft: var(--dusty-rose);
+  --accent-wash: var(--blush);
+
+  --md-primary-fg-color:        var(--paper);
+  --md-primary-fg-color--light: var(--paper-raise);
+  --md-primary-fg-color--dark:  var(--beige);
+  --md-primary-bg-color:        var(--ink);
+  --md-primary-bg-color--light: var(--ink-muted);
+  --md-accent-fg-color:         var(--accent);
+  --md-accent-bg-color:         var(--paper);
+
+  --md-default-bg-color:           var(--paper);
+  --md-default-fg-color:           var(--ink);
+  --md-default-fg-color--light:    var(--ink-muted);
+  --md-default-fg-color--lighter:  var(--ink-faint);
+  --md-default-fg-color--lightest: var(--rule);
+
+  --md-typeset-color:   var(--ink);
+  --md-typeset-a-color: var(--accent);
+  --md-code-bg-color:   var(--paper-sunk);
+  --md-code-fg-color:   var(--ink);
+
+  --md-footer-bg-color:       var(--beige);
+  --md-footer-bg-color--dark: var(--beige);
+  --md-footer-fg-color:       var(--ink);
+  --md-footer-fg-color--light:  var(--ink-muted);
+  --md-footer-fg-color--lighter: var(--ink-faint);
+}
+
+/* The brand spec defines no dark palette (light-only, Conrad's call 26-07-2026).
+   This is a derived courtesy scheme: same hues, inverted lightness. */
+[data-md-color-scheme="slate"] {
+  --paper:       #1c1a18;
+  --paper-raise: #262320;
+  --paper-sunk:  #151312;
+  --ink:         #f2ece2;
+  --ink-muted:   #c8bfb2;
+  --ink-faint:   #9d9387;
+  --rule:        #3b3630;
+  --rule-strong: #5c544a;
+  --accent:      #e6a9ae;
+  --accent-soft: #a85a62;
+  --accent-wash: #33292a;
+
+  --md-hue: 30;
+  --md-primary-fg-color:        var(--paper);
+  --md-primary-fg-color--light: var(--paper-raise);
+  --md-primary-fg-color--dark:  var(--paper-sunk);
+  --md-primary-bg-color:        var(--ink);
+  --md-primary-bg-color--light: var(--ink-muted);
+  --md-accent-fg-color:         var(--accent);
+
+  --md-default-bg-color:           var(--paper);
+  --md-default-fg-color:           var(--ink);
+  --md-default-fg-color--light:    var(--ink-muted);
+  --md-default-fg-color--lighter:  var(--ink-faint);
+  --md-default-fg-color--lightest: var(--rule);
+
+  --md-typeset-color:   var(--ink);
+  --md-typeset-a-color: var(--accent);
+  --md-code-bg-color:   var(--paper-sunk);
+  --md-code-fg-color:   var(--ink);
+
+  --md-footer-bg-color:       #151312;
+  --md-footer-bg-color--dark: #151312;
+  --md-footer-fg-color:       var(--ink);
+  --md-footer-fg-color--light:   var(--ink-muted);
+  --md-footer-fg-color--lighter: var(--ink-faint);
+}
+
+/* ==========================================================================
+   Typography — Material default (Roboto);  palette carries the warmth
+   ========================================================================== */
+
+.md-typeset {
+  font-size: .78rem;
+  line-height: 1.72;
+  font-weight: 400;
+}
+
+.md-typeset p,
+.md-typeset li { max-width: 70ch; }
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  color: var(--ink);
+  text-wrap: balance;
+}
+
+.md-typeset h1 {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.18;
+  letter-spacing: -0.02em;
+  margin: 0 0 .95rem;
+}
+
+.md-typeset h2 {
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 1.3;
+  letter-spacing: -0.012em;
+  margin: 2.9rem 0 .9rem;
+  padding-top: .95rem;
+  border-top: 1px solid var(--rule);
+}
+
+.md-typeset h3 {
+  font-weight: 600;
+  font-size: .9rem;
+  margin: 1.9rem 0 .45rem;
+}
+
+.md-typeset h4 {
+  font-weight: 600;
+  font-size: .66rem;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.md-typeset a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: .18em;
+  text-decoration-color: color-mix(in srgb, var(--accent) 34%, transparent);
+}
+
+.md-typeset a:hover { text-decoration-color: var(--accent); }
+
+.md-typeset strong { font-weight: 600; color: var(--ink); }
+
+/* ==========================================================================
+   Measure and rhythm
+   ========================================================================== */
+
+.md-grid { max-width: 60rem; }
+
+.md-typeset hr {
+  border-bottom: 1px solid var(--rule);
+  margin: 2.4rem 0;
+}
+
+/* Definition lists carry the contact and detail pairs */
+.md-typeset dl dt {
+  font-weight: 600;
+  font-size: .68rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-top: .9rem;
+}
+
+.md-typeset dl dd { margin: .1rem 0 0 0; }
+
+/* Tables read as a printed index, not a grid */
+.md-typeset table:not([class]) {
+  border: 0;
+  font-size: .72rem;
+  font-variant-numeric: tabular-nums lining-nums;
+}
+
+.md-typeset table:not([class]) th {
+  background: transparent;
+  font-weight: 600;
+  font-size: .6rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  border-bottom: 1px solid var(--rule-strong);
+  padding: .45rem 1rem .45rem 0;
+}
+
+.md-typeset table:not([class]) td {
+  border-top: 1px solid var(--rule);
+  border-bottom: 0;
+  padding: .6rem 1rem .6rem 0;
+  vertical-align: baseline;
+}
+
+.md-typeset table:not([class]) tr:hover td { background: transparent; }
+.md-typeset table:not([class]) td:last-child,
+.md-typeset table:not([class]) th:last-child { padding-right: 0; }
+
+/* ==========================================================================
+   Chrome
+   ========================================================================== */
+
+.md-header {
+  box-shadow: none;
+  border-bottom: 1px solid var(--rule);
+  background: var(--paper);
+}
+
+.md-header__title { font-weight: 600; font-size: .76rem; letter-spacing: -0.005em; }
+
+.md-tabs {
+  background: var(--paper);
+  border-bottom: 1px solid var(--rule);
+}
+
+.md-tabs__link {
+  font-size: .68rem;
+  font-weight: 500;
+  opacity: .7;
+  color: var(--ink);
+}
+
+.md-tabs__link--active,
+.md-tabs__link:hover { opacity: 1; color: var(--accent); }
+
+.md-nav__link--active,
+.md-nav__link:focus,
+.md-nav__link:hover { color: var(--accent); }
+
+.md-search__form {
+  border-radius: 2px;
+  background: var(--paper-sunk);
+  box-shadow: none;
+  border: 1px solid var(--rule);
+}
+
+.md-search__input::placeholder { color: var(--ink-faint); }
+.md-search__input { color: var(--ink); }
+
+.md-footer { background: var(--beige); }
+[data-md-color-scheme="slate"] .md-footer { background: #191614; }
+
+.md-footer__link { color: var(--ink); }
+.md-footer-meta { background: var(--md-footer-bg-color--dark); }
+.md-footer-copyright, .md-social__link { color: var(--ink-muted); }
+
+/* Browser surfaces */
+::selection {
+  background: var(--accent-wash);
+  color: var(--ink);
+}
+
+[data-md-color-scheme="slate"] ::selection { background: #4a3232; }
+
+html { scrollbar-color: var(--rule-strong) transparent; }
+
+*:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 1px;
+}
+
+/* ==========================================================================
+   Home — masthead
+   ========================================================================== */
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.9fr) minmax(0, .8fr);
+  gap: 3rem;
+  align-items: start;
+  margin: .4rem 0 0;
+  padding-bottom: 2.2rem;
+  border-bottom: 1px solid var(--rule-strong);
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  margin: 0 0 1.3rem !important;
+}
+
+.hero .hero-lede {
+  font-size: .84rem;
+  line-height: 1.7;
+  max-width: 62ch;
+  color: var(--ink-muted);
+  margin: 0 0 .9rem;
+}
+
+.hero .hero-lede:last-child { margin-bottom: 0; }
+.hero .hero-lede strong { color: var(--ink); font-weight: 500; }
+
+.hero-portrait { max-width: 230px; justify-self: end; }
+
+.hero-portrait img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: 50% 22%;
+  border-radius: 2px;
+  box-shadow: 0 14px 30px -20px rgba(60, 60, 60, .5);
+}
+
+@media screen and (max-width: 60em) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    align-items: start;
+  }
+  .hero h1 { font-size: 2.2rem; }
+  .hero-portrait { order: -1; max-width: 170px; justify-self: start; }
+}
+
+/* ==========================================================================
+   Two-column standfirst — rules, not cards
+   ========================================================================== */
+
+.split {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+  gap: 2.2rem 3rem;
+  margin: 2.4rem 0 3rem;
+}
+
+.split > div > h3 {
+  margin: 0 0 .55rem !important;
+  padding-bottom: .45rem;
+  border-bottom: 1px solid var(--rule);
+  font-size: .62rem;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.split p { font-size: .74rem; color: var(--ink-muted); }
+.split p:last-child { margin-bottom: 0; }
+
+/* ==========================================================================
+   Media — one featured film, everything else as a linked index
+   ========================================================================== */
+
+.video {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  margin: 1.2rem 0 .5rem;
+  background: var(--paper-sunk);
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video + .caption {
+  font-size: .68rem;
+  color: var(--ink-faint);
+  margin: 0 0 2rem;
+}
+
+/* ==========================================================================
+   Authoring guides — delete each note as you replace it with real copy
+   ========================================================================== */
+
+.md-typeset .todo {
+  max-width: 70ch;
+  margin: .7rem 0 1.1rem;
+  padding: .55rem 0 .55rem .95rem;
+  border-left: 1px solid var(--accent-soft);
+  font-size: .66rem;
+  line-height: 1.62;
+  color: var(--ink-faint);
+}
+
+.md-typeset .todo::before {
+  content: "Draft note";
+  display: block;
+  font-size: .56rem;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: .2rem;
+}
+
+.md-typeset .todo a { color: inherit; }
+
+/* ==========================================================================
+   Media tiles — thumbnail grid linking out, no embeds
+   ========================================================================== */
+
+.md-typeset .tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 11rem), 1fr));
+  gap: 1.4rem 1.1rem;
+  margin: 1.6rem 0 2.2rem;
+}
+
+.md-typeset .tiles p { margin: 0; max-width: none; }
+
+.md-typeset .tiles a {
+  display: block;
+  font-size: .7rem;
+  line-height: 1.45;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.md-typeset .tiles a img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 2px;
+  border: 1px solid var(--rule);
+  margin-bottom: .45rem;
+  transition: filter .35s cubic-bezier(.16, 1, .3, 1),
+              border-color .35s cubic-bezier(.16, 1, .3, 1);
+  filter: saturate(.82);
+}
+
+.md-typeset .tiles a:hover img,
+.md-typeset .tiles a:focus-visible img {
+  filter: saturate(1);
+  border-color: var(--accent-soft);
+}
+
+.md-typeset .tiles a:hover { color: var(--accent); }
+.md-typeset .tiles a strong { font-weight: 600; }
+
+@media (prefers-reduced-motion: reduce) {
+  .md-typeset .tiles a img { transition: none; }
+}
+
+/* Inline icons in definition-list labels */
+.md-typeset dl dt .twemoji {
+  width: .9em;
+  height: .9em;
+  vertical-align: -.1em;
+  color: var(--accent);
+}
+
+.md-typeset .twemoji.lg { width: 1em; height: 1em; }
+
+/* ==========================================================================
+   Concert listings
+   ========================================================================== */
+
+.md-typeset .entry {
+  padding: 1.1rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.md-typeset .entry:first-child { border-top: 1px solid var(--rule-strong); }
+
+.md-typeset .entry h3 {
+  margin: .15rem 0 .25rem !important;
+  font-size: .92rem;
+}
+
+.md-typeset .entry-date {
+  font-size: .64rem;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0;
+}
+
+.md-typeset .entry p { margin: .2rem 0; font-size: .74rem; color: var(--ink-muted); }
+.md-typeset .entry p:last-child { margin-bottom: 0; }
+
+/* Blog post listing */
+.md-typeset .md-post--excerpt { border-bottom: 1px solid var(--rule); padding-bottom: 1rem; }
+.md-typeset .md-post__meta .md-meta__list { color: var(--ink-faint); font-size: .66rem; }
+
+/* ==========================================================================
+   Contact grid — horizontal, not a vertical list
+   ========================================================================== */
+
+.md-typeset .contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr));
+  gap: 1.6rem 2rem;
+  margin: 1.8rem 0 2.6rem;
+}
+
+.md-typeset .contact-grid > div {
+  padding-top: .8rem;
+  border-top: 1px solid var(--rule);
+}
+
+.md-typeset .contact-grid h3 {
+  margin: .3rem 0 .1rem !important;
+  font-size: .62rem;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.md-typeset .contact-grid p { margin: 0; font-size: .78rem; }
+.md-typeset .contact-grid .twemoji { width: 1.05rem; height: 1.05rem; color: var(--accent); }
+
+/* ==========================================================================
+   Booking embed
+   ========================================================================== */
+
+.md-typeset .booking-card {
+  margin: 1.3rem 0 .8rem;
+  padding: 1.9rem 1.6rem 2rem;
+  text-align: center;
+  background: var(--paper-raise);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 8px 22px -18px rgba(60, 60, 60, .45);
+  transition: transform .25s cubic-bezier(.16, 1, .3, 1),
+              box-shadow .25s cubic-bezier(.16, 1, .3, 1),
+              border-color .25s ease;
+}
+
+.md-typeset .booking-card:hover,
+.md-typeset .booking-card:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 34px -20px rgba(60, 60, 60, .55);
+  border-color: var(--accent-soft);
+}
+
+.md-typeset .booking-card__title {
+  margin: 0 0 .35rem;
+  max-width: none;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.md-typeset .booking-card__sub {
+  margin: 0 0 1rem;
+  max-width: none;
+  font-size: .76rem;
+  color: var(--ink-muted);
+}
+
+.md-typeset .booking-card__cta {
+  display: inline-block;
+  padding: .5rem 1.15rem;
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--paper);
+  font-size: .72rem;
+  font-weight: 600;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .booking-card__cta { color: #17151a; }
+
+#booking-dialog {
+  width: min(95vw, 950px);
+  height: 85vh;
+  padding: 0;
+  border: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--paper-raise);
+  box-shadow: 0 24px 64px -24px rgba(60, 60, 60, .5);
+}
+
+#booking-dialog::backdrop {
+  background: rgba(60, 60, 60, .55);
+  backdrop-filter: blur(6px);
+}
+
+#booking-dialog iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.booking-dialog__close {
+  position: absolute;
+  top: .5rem;
+  right: .7rem;
+  z-index: 2;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: var(--paper);
+  color: var(--ink);
+  font-size: 1.2rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.booking-dialog__close:hover { background: var(--accent-wash); }
+
+/* ==========================================================================
+   Home call to action
+   ========================================================================== */
+
+.md-typeset .cta {
+  margin: 2.6rem 0 1rem;
+  padding: 1.15rem 1.4rem;
+  background: var(--accent-wash);
+  border-radius: 3px;
+  font-size: .8rem;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .cta { background: var(--paper-raise); }
+
+.md-typeset .cta p { margin: 0; max-width: none; }
+
+/* ==========================================================================
+   Academic record
+   ========================================================================== */
+
+.md-typeset .stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 9rem), 1fr));
+  gap: 1.4rem 2rem;
+  margin: 1.4rem 0 1.2rem;
+}
+
+.md-typeset .stats > div { border-top: 1px solid var(--rule-strong); padding-top: .7rem; }
+.md-typeset .stats dl { margin: 0; }
+
+.md-typeset .stats dt {
+  margin: 0;
+  font-size: .62rem;
+  font-weight: 600;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.md-typeset .stats dt strong { font-weight: 600; color: var(--ink-faint); }
+
+.md-typeset .stats dd {
+  margin: .3rem 0 0;
+  font-size: .95rem;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--ink);
+}
+
+/* ==========================================================================
+   Repertoire list
+   ========================================================================== */
+
+.md-typeset .rep { margin: 2.2rem 0 1rem; }
+
+.md-typeset .rep dl {
+  margin: 0;
+  columns: 3;
+  column-gap: 3.2rem;
+}
+
+@media screen and (max-width: 60em) { .md-typeset .rep dl { columns: 2; } }
+@media screen and (max-width: 40em) { .md-typeset .rep dl { columns: 1; } }
+
+.md-typeset .rep dt {
+  break-after: avoid;
+  break-inside: avoid;
+  margin: 2.2rem 0 0;
+  padding-bottom: .45rem;
+  border-bottom: 1px solid var(--rule);
+  font-size: .68rem;
+  font-weight: 600;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.md-typeset .rep dt:first-child { margin-top: 0; }
+
+.md-typeset .rep dd {
+  break-inside: avoid;
+  break-before: avoid;
+  margin: .55rem 0 0;
+  font-size: .78rem;
+  line-height: 1.5;
+}
+
+/* One-line summary strip */
+.md-typeset .factline {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+  gap: 1.4rem 2.4rem;
+  margin: 1.8rem 0 2.2rem;
+  padding-top: 1.1rem;
+  border-top: 1px solid var(--rule-strong);
+}
+
+.md-typeset .factline dl { margin: 0; }
+
+.md-typeset .factline dt {
+  margin: 0 0 .3rem;
+  font-size: .6rem;
+  font-weight: 600;
+  letter-spacing: .11em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.md-typeset .factline dd {
+  margin: 0;
+  font-size: .74rem;
+  line-height: 1.55;
+  color: var(--ink-muted);
+}
+
+/* Standfirst — opening paragraph on a section landing page */
+.md-typeset .standfirst { margin: 0 0 .4rem; }
+
+.md-typeset .standfirst p {
+  font-size: .96rem;
+  line-height: 1.6;
+  max-width: 56ch;
+  color: var(--ink);
+}
+
+/* ==========================================================================
+   Biography lede image and pull quote
+   ========================================================================== */
+
+.md-typeset img.lede-image {
+  width: 100%;
+  aspect-ratio: 21 / 9;
+  object-fit: cover;
+  object-position: 50% 35%;
+  border-radius: 3px;
+  margin: 0 0 1.8rem;
+}
+
+.md-typeset .pullquote {
+  margin: 2rem 0;
+  padding: 0 0 0 1.3rem;
+  border-left: 2px solid var(--accent-soft);
+}
+
+.md-typeset .pullquote blockquote {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-style: italic;
+  color: var(--ink);
+}
+
+.md-typeset .pullquote blockquote p { max-width: 46ch; }
+.md-typeset .pullquote blockquote strong { font-style: normal; }
+
+/* ==========================================================================
+   Home hero — background plate, entrance, rotating quotes
+   ========================================================================== */
+
+.md-typeset .hero {
+  position: relative;
+  display: block;
+  margin: -.4rem 0 0;
+  padding: 4.2rem 0 3rem;
+}
+
+@keyframes hero-drift {
+  from { transform: scale(1.04) translate3d(0, 0, 0); }
+  to   { transform: scale(1.12) translate3d(-1.5%, -1.5%, 0); }
+}
+
+.md-typeset .hero__body { max-width: 46rem; }
+
+.md-typeset .hero h1 {
+  font-size: 3.1rem;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.035em;
+  margin: 0 0 1.2rem !important;
+  animation: rise .75s cubic-bezier(.16, 1, .3, 1) backwards;
+}
+
+.md-typeset .hero .hero-meta {
+  margin: 0 0 .5rem;
+  max-width: none;
+  font-size: .8rem;
+  letter-spacing: .04em;
+  color: var(--ink-faint);
+  animation: rise .75s cubic-bezier(.16, 1, .3, 1) .05s backwards;
+}
+
+.md-typeset .hero .hero-lede {
+  font-size: 1rem;
+  line-height: 1.55;
+  max-width: 60ch;
+  color: var(--ink);
+  margin: 0;
+  animation: rise .75s cubic-bezier(.16, 1, .3, 1) .1s backwards;
+}
+
+.md-typeset .hero .hero-tags {
+  margin: 1.4rem 0 0;
+  max-width: none;
+  font-size: .64rem;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  animation: rise .75s cubic-bezier(.16, 1, .3, 1) .2s backwards;
+}
+
+.md-typeset .hero .todo { animation: rise .75s cubic-bezier(.16, 1, .3, 1) .15s backwards; }
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(10px); filter: blur(3px); }
+  to   { opacity: 1; transform: none; filter: none; }
+}
+
+@media screen and (max-width: 60em) {
+  .md-typeset .hero { padding: 2.4rem 0 2rem; }
+  .md-typeset .hero h1 { font-size: 2.2rem; }
+}
+
+/* Rotating quotes */
+.md-typeset ul.rotator {
+  position: relative;
+  list-style: none;
+  margin: 2.2rem 0 1rem;
+  padding: 0 0 0 1.3rem;
+  border-left: 2px solid var(--accent-soft);
+  min-height: 5.2rem;
+}
+
+.md-typeset ul.rotator li {
+  position: absolute;
+  inset: 0 0 auto 1.3rem;
+  margin: 0;
+  max-width: 52ch;
+  font-size: 1.02rem;
+  line-height: 1.45;
+  font-style: italic;
+  color: var(--ink);
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity .9s ease, transform .9s cubic-bezier(.16, 1, .3, 1);
+  pointer-events: none;
+}
+
+.md-typeset ul.rotator li.is-active {
+  opacity: 1;
+  transform: none;
+  pointer-events: auto;
+}
+
+.md-typeset ul.rotator li span {
+  display: block;
+  margin-top: .6rem;
+  font-style: normal;
+  font-size: .68rem;
+  font-weight: 600;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.md-typeset ul.rotator li .todo { font-style: normal; }
+
+@media (prefers-reduced-motion: reduce) {
+  .md-typeset .hero h1,
+  .md-typeset .hero .hero-lede,
+  .md-typeset .hero .hero-tags,
+  .md-typeset .hero .todo { animation: none; }
+  .md-typeset ul.rotator li { transition: none; }
+}
+
+/* ==========================================================================
+   Page background — rotating photos behind a whole page
+   ========================================================================== */
+
+.md-typeset .page-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.md-typeset .page-bg p { margin: 0; max-width: none; display: contents; }
+
+.md-typeset .page-bg img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 35%;
+  opacity: 0;
+  filter: saturate(1.05) contrast(1.02);
+  transition: opacity 2s ease;
+}
+
+.md-typeset .page-bg img.is-active {
+  opacity: .45;
+  animation: hero-drift 30s ease-in-out infinite alternate;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .page-bg img.is-active { opacity: .4; }
+
+/* Scrim keeps body text comfortably readable over the plate */
+.md-typeset .page-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg,
+    color-mix(in srgb, var(--paper) 12%, transparent) 0%,
+    color-mix(in srgb, var(--paper) 58%, transparent) 40%,
+    color-mix(in srgb, var(--paper) 88%, transparent) 78%,
+    var(--paper) 100%);
+}
+
+/* Everything else on the page sits above the plate */
+.md-typeset > *:not(.page-bg) { position: relative; z-index: 1; }
+
+/* Sidebars and header sit above it too, on a light wash so nav stays crisp.
+   Only on desktop — below 76.25em Material's sidebars are an off-canvas
+   drawer that depends on `position: fixed`; overriding that unconditionally
+   broke the drawer and squeezed page content into a sliver on mobile. */
+@media screen and (min-width: 76.25em) {
+  .md-sidebar {
+    position: sticky;
+    z-index: 2;
+  }
+}
+
+/* Sidebars read as a soft veil over the photo rather than a hard panel:
+   a blur with no edge, faded out at top and bottom. */
+.md-sidebar__scrollwrap { background: none; }
+
+.md-sidebar__inner {
+  position: relative;
+  isolation: isolate;
+}
+
+.md-sidebar__inner::before {
+  content: "";
+  position: absolute;
+  inset: -.6rem -.9rem;
+  z-index: -1;
+  background: color-mix(in srgb, var(--paper) 72%, transparent);
+  backdrop-filter: blur(14px) saturate(1.1);
+  -webkit-backdrop-filter: blur(14px) saturate(1.1);
+  border-radius: 10px;
+  mask-image: linear-gradient(180deg, transparent 0, #000 1.6rem,
+                              #000 calc(100% - 1.6rem), transparent 100%);
+  -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 1.6rem,
+                              #000 calc(100% - 1.6rem), transparent 100%);
+}
+
+/* Nothing to veil when the sidebar has no items (e.g. a page with no TOC) */
+.md-sidebar__inner:not(:has(.md-nav__link))::before { display: none; }
+
+.md-header, .md-tabs { position: relative; z-index: 3; }
+.md-header { background: var(--paper); }
+.md-footer { position: relative; z-index: 2; }
+
+@media (prefers-reduced-motion: reduce) {
+  .md-typeset .page-bg img.is-active { animation: none; }
+}
+
+/* ==========================================================================
+   Gallery — masonry columns, nothing cropped
+   ========================================================================== */
+
+.md-typeset .grid-gallery {
+  columns: 3;
+  column-gap: .6rem;
+  margin: 1.6rem 0 2.4rem;
+}
+
+@media screen and (max-width: 60em) { .md-typeset .grid-gallery { columns: 2; } }
+@media screen and (max-width: 30em) { .md-typeset .grid-gallery { columns: 1; } }
+
+.md-typeset .grid-gallery p { margin: 0; max-width: none; display: contents; }
+
+.md-typeset .grid-gallery a {
+  display: block;
+  break-inside: avoid;
+  margin: 0 0 .6rem;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.md-typeset .grid-gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+  cursor: zoom-in;
+  filter: saturate(.85);
+  transition: filter .4s cubic-bezier(.16, 1, .3, 1);
+}
+
+.md-typeset .grid-gallery a:hover img,
+.md-typeset .grid-gallery a:focus-visible img { filter: saturate(1); }
+
+@media (prefers-reduced-motion: reduce) {
+  .md-typeset .grid-gallery img { transition: none; }
+}
+
+/* ==========================================================================
+   Inline photo — whole image over a blurred copy of itself
+   Author as:  ![Caption](path){ .inset }
+   ========================================================================== */
+
+.md-typeset .inset-figure {
+  margin: 1.8rem 0 2rem;
+}
+
+.md-typeset .inset-figure__frame {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  background: var(--paper-sunk);
+}
+
+.md-typeset .inset-figure__blur {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.25);
+  filter: blur(30px) saturate(.7) brightness(1.05);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .inset-figure__blur {
+  filter: blur(30px) saturate(.7) brightness(.55);
+}
+
+.md-typeset .inset-figure__frame a { display: block; }
+
+.md-typeset .inset-figure__frame img.inset {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 70vh;
+  object-fit: contain;
+  cursor: zoom-in;
+}
+
+.md-typeset .inset-figure figcaption {
+  margin: .55rem 0 0;
+  font-size: .68rem;
+  line-height: 1.5;
+  color: var(--ink-faint);
+}
+
+/* Floated alongside the opening text on wide screens */
+@media screen and (min-width: 60em) {
+  .md-typeset .inset-figure--side {
+    float: right;
+    width: 40%;
+    margin: .2rem 0 1.4rem 2.2rem;
+    shape-outside: margin-box;
+  }
+}
+
+/* A floated figure must not overhang the next section or squeeze a grid */
+.md-typeset h2,
+.md-typeset .contact-grid,
+.md-typeset .split,
+.md-typeset .grid-gallery,
+.md-typeset .stats,
+.md-typeset .rep,
+.md-typeset .factline,
+.md-typeset .cta,
+.md-typeset ul.rotator,
+.md-typeset .booking-card,
+.md-typeset .video,
+.md-typeset table:not([class]) { clear: both; }
