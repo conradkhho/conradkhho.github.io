@@ -8,7 +8,28 @@ description: Upcoming and past concerts conducted by Conrad Ho.
 
 ## Upcoming
 
-(*coming soon*)
+<div class="entry" markdown>
+<p class="entry-date">Wednesday 2 Dec 2026, 7.30pm</p>
+### The Platform: Royal Holloway Strings' Society
+Windsor Auditorium, Royal Holloway · Conductor
+
+Frank Bridge *Three Idylls for Strings* · Duke Ellington *It Don't Mean A Thing* (arr. for Strings)
+
+
+
+[Tickets](https://www.royalholloway.ac.uk/research-and-education/subjects/music/events/the-platform-a-student-showcase-3/)
+</div>
+
+<div class="entry" markdown>
+<p class="entry-date">Thu 3 Dec 2026, 8.00pm</p>
+### The Platform: The Wind Band Through Time
+Windsor Auditorium, Royal Holloway · Conductor
+
+Holst *Suite No. 2 in F for Military Band* · Danny Elfman *The Nightmare Before Christmas* (arr. Michael Brown)
+
+
+[Tickets](https://www.royalholloway.ac.uk/research-and-education/subjects/music/events/the-platform-a-student-showcase-4/)
+</div>
 
 <!-- ── COPY THIS BLOCK FOR EACH UPCOMING CONCERT ──────────────────────────────
 

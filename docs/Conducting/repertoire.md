@@ -19,6 +19,9 @@ Berlioz
 Brahms
 :   *Academic Festival* Overture
 
+Bridge
+:   *Three Idylls* for Strings
+
 Dvořák
 :   Symphony No. 8
 
