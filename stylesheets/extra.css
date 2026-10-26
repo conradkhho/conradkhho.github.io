@@ -1108,3 +1108,167 @@ html { scrollbar-color: var(--rule-strong) transparent; }
 .md-typeset .booking-card,
 .md-typeset .video,
 .md-typeset table:not([class]) { clear: both; }
+
+/* ==========================================================================
+   Sample materials (tutoring)
+   ========================================================================== */
+
+.md-typeset .sample-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.3rem 0 1rem;
+}
+
+@media screen and (max-width: 40em) {
+  .md-typeset .sample-grid { grid-template-columns: minmax(0, 1fr); }
+}
+
+.md-typeset .sample-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 1.3rem 1.3rem 1.2rem;
+  background: var(--paper-raise);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  box-shadow: 0 8px 22px -18px rgba(60, 60, 60, .45);
+  transition: transform .25s cubic-bezier(.16, 1, .3, 1),
+              box-shadow .25s cubic-bezier(.16, 1, .3, 1),
+              border-color .25s ease;
+}
+
+.md-typeset .sample-card:hover,
+.md-typeset .sample-card:focus-within {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 34px -20px rgba(60, 60, 60, .55);
+  border-color: var(--accent-soft);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .sample-card {
+  box-shadow: 0 8px 22px -18px rgba(0, 0, 0, .6);
+}
+
+.md-typeset .sample-card__tag {
+  margin: 0 0 .45rem;
+  max-width: none;
+  font-size: .6rem;
+  font-weight: 600;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.md-typeset .sample-card__title {
+  margin: 0 0 .4rem;
+  max-width: none;
+  font-size: .95rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--ink);
+}
+
+.md-typeset .sample-card__desc {
+  margin: 0 0 1rem;
+  max-width: none;
+  font-size: .74rem;
+  line-height: 1.6;
+  color: var(--ink-muted);
+}
+
+.md-typeset .sample-card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-top: auto;
+}
+
+.md-typeset .sample-btn {
+  display: inline-block;
+  padding: .5rem 1.15rem;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--paper);
+  font-size: .72rem;
+  font-weight: 600;
+  line-height: 1.4;
+  text-decoration: none;
+  transition: transform .2s cubic-bezier(.16, 1, .3, 1), background .2s ease;
+}
+
+.md-typeset .sample-btn:hover,
+.md-typeset .sample-btn:focus-visible {
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+
+.md-typeset .sample-btn--ghost {
+  background: transparent;
+  color: var(--accent);
+  border-color: var(--accent-soft);
+}
+
+.md-typeset .sample-btn--ghost:hover,
+.md-typeset .sample-btn--ghost:focus-visible {
+  background: var(--accent-wash);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .sample-btn { color: #17151a; }
+[data-md-color-scheme="slate"] .md-typeset .sample-btn--ghost { color: var(--accent); }
+
+/* Overrides Material's default details/admonition styling (blue border, info icon) */
+.md-typeset details.sample-preview {
+  margin: .75rem 0 0;
+  padding: 0;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 6px;
+  box-shadow: none;
+  background: transparent;
+}
+
+[data-md-color-scheme="slate"] .md-typeset details.sample-preview {
+  border-color: var(--md-default-fg-color--lightest);
+}
+
+.md-typeset details.sample-preview > summary {
+  margin: 0;
+  padding: .55rem .9rem;
+  background: none;
+  cursor: pointer;
+  font-size: .64rem;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.md-typeset details.sample-preview > summary::before {
+  display: none;
+  content: none;
+}
+
+.md-typeset details.sample-preview[open] > summary {
+  color: var(--accent);
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.md-typeset details.sample-preview iframe {
+  display: block;
+  width: 100%;
+  height: 70vh;
+  min-height: 420px;
+  margin: 0;
+  border: 0;
+  border-radius: 0 0 5px 5px;
+  background: #fff;
+}
+
+@media screen and (max-width: 40em) {
+  .md-typeset .sample-preview { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .md-typeset .sample-card,
+  .md-typeset .sample-btn { transition: none; }
+}
