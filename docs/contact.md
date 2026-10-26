@@ -24,12 +24,6 @@ Whether it's collaboration, research discussions, tutoring, conducting gigs, or 
 </div>
 
 <div markdown>
-:fontawesome-brands-linkedin:{ .lg }
-### LinkedIn
-[conrad-ho](https://www.linkedin.com/in/conrad-h-11574530a/)
-</div>
-
-<div markdown>
 :fontawesome-brands-github:{ .lg }
 ### GitHub
 [conradkhho](https://github.com/conradkhho)
@@ -60,3 +54,4 @@ You can schedule a meeting slot (15/30/60 mins) directly using my booking page b
 If you need longer, please book a 60-minute slot and leave a note.
 
 ---
+x
