@@ -83,6 +83,7 @@ A few examples of my own tutorial sheets and lecture notes. Yours would be built
 
 - Sat my GCSEs and A Levels together at 16 meant: teaching myself much of the A Level content and *learning how to learn* maths and physics, not only what to memorise.
 - Refined those methods through a Theoretical Physics degree at Royal Holloway, University of London, where I also do research in quantum foundations.
+- On track to achieve high 1st Hon. BSc. in Theoretical Physics, with highlights of 96% in Mathematical Methods and 90% in Quantum Mechanics.
 - Currently applying to postgraduate programmes at Cambridge, Oxford and Imperial, so I know what ambitious students are working towards.
 
 ## Guide rates
