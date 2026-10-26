@@ -44,17 +44,12 @@ with significant research experience gained through past and ongoing projects. A
 
 <div markdown>
 **Year 3** · in progress
-:   ~85% — on track for a 1st
+:   ~90% — on track for 1st Hon.
 </div>
 
 <div markdown>
 **Year 2**<sup>†</sup>
 :   83.6%
-</div>
-
-<div markdown>
-**Year 1**
-:   69%
 </div>
 
 </div>
@@ -79,14 +74,6 @@ Competitive EPMS School Grant for Academic Activities — Royal Holloway
 - Contributed to event organisation and outreach initiatives promoting DEI in Physics.
 - Presented summer research to 40+ audience, consisting of peers across cohorts and academics within
   the department.
-
-
-### Home Server Project
-**Jul 2025 – Present**
-
-- Built and maintained a self-hosted server running OpenMediaVault, Home Assistant, Open WebUI, and
-  Immich.
-- Configured Docker containers and secure remote access via Tailscale VPN.
 
 ### Tutoring
 
